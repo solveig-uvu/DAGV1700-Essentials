@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: TableChair Practice.ma
-//Last modified: Wed, Sep 03, 2025 04:12:54 PM
+//Last modified: Wed, Sep 03, 2025 04:17:16 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
@@ -14,12 +14,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "CE9938B0-4C7C-326B-F266-EE9134B98773";
+fileInfo "UUID" "5B5BD8B9-4DE6-5348-F7D5-7D8945634F08";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "FC5C4D7D-461F-93C2-E060-29A37B77E74C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 80.193336791897664 33.72412761210515 -12.965206971840832 ;
+	setAttr ".t" -type "double3" 98.756320801527835 40.387195671486722 -14.719925590429776 ;
 	setAttr ".r" -type "double3" -19.664389683711907 -984.60000000017465 2.5444437451708134e-14 ;
 	setAttr ".rp" -type "double3" 2.2204460492503131e-16 0 -7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" -1.237728865724842e-15 -2.8189632240007725e-15 4.3229740097391207e-15 ;
@@ -27,7 +27,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0B233CB4-4719-6F1B-8417-EE9122468DCD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 82.60884391273035;
+	setAttr ".coi" 102.40934614717277;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
