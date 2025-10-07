@@ -934,7 +934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988729566}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a28a400391344b9c88e28b4820b5ed7, type: 3}
   m_Name: 
@@ -992,7 +992,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 5.4, y: 0.1, z: 1}
   m_Center: {x: 0, y: 0.4, z: 0}
@@ -1073,7 +1073,87 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7620737175262920512, guid: 92c0c0bd434ae094da0787a018283d4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1988729569}
+    - targetCorrespondingSourceObject: {fileID: 5538419951631294398, guid: 92c0c0bd434ae094da0787a018283d4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 210979188094164372}
+    - targetCorrespondingSourceObject: {fileID: 5538419951631294398, guid: 92c0c0bd434ae094da0787a018283d4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 210979188094164373}
   m_SourcePrefab: {fileID: 100100000, guid: 92c0c0bd434ae094da0787a018283d4d, type: 3}
+--- !u!1 &210979188094164371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5538419951631294398, guid: 92c0c0bd434ae094da0787a018283d4d, type: 3}
+  m_PrefabInstance: {fileID: 210979188094164370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &210979188094164372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210979188094164371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.83, y: 0.03, z: 0.2}
+  m_Center: {x: 0, y: 0.09, z: 0}
+--- !u!114 &210979188094164373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210979188094164371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a28a400391344b9c88e28b4820b5ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEventsBehaviour
+  startHoldTime: 0.1
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1988729567}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MovingPlatform
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerEnterRepeatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerHoldTime: 0.01
+  repeatHoldTime: 0.01
+  exitHoldTime: 0.01
+  canRepeat: 0
+  repeatTimes: 10
 --- !u!1001 &2471550236108535391
 PrefabInstance:
   m_ObjectHideFlags: 0
